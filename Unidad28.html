@@ -1,0 +1,24 @@
+<!-- Problema:Confeccionar un formulario que solicite el ingreso de mail de una persona y luego pida el ingreso de su clave dos veces 
+    (recordar inicializar la propiedad name del elemento input con distintos nombres para cada control)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba de formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Iniciar sesión</h2>
+        <form action="registrardatos.php" method="post">
+            Ingrese su email: 
+            <input type="text" name="email" size="50"><br>
+            Ingrese su clave: 
+            <input type="password" name="clave1" size="12"><br>
+            Ingrese su clave nuevamente: 
+            <input type="password" name="clave2" size="12"><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>

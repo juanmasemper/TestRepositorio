@@ -1,0 +1,24 @@
+<!-- Problema:Confeccionar un formulario que solicite el ingreso del nombre de una persona y su edad. 
+Luego llamar a la página "registrardatos.php" para que imprima en pantalla los valores ingresados. 
+Disponer un botón de tipo submit para el envío de los datos. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba de formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Formulario de datos personales</h2>
+
+        <form action="registrardatos.php" method="post">  <!-- Todavía no disponemos de la pagina en php debido a que no sabemos crearla-->
+            Ingrese su nombre:
+            <input type="text" name="nombre" size="30">
+            <br><br>
+            Ingrese su edad:
+            <input type="text" name="edad" size="3">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

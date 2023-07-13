@@ -1,0 +1,47 @@
+
+<!-- 24 - Contenido de la cabecera de la página (<meta>)
+
+Hemos definido un elemento meta fundamental donde indicamos el tipo de codificación de caracteres de la página:
+
+<meta charset="UTF-8">
+Veamos ahora otras propiedades de la marca meta y los valores más comunes con lo que podemos inicializarlos:
+
+<meta name="nombre de la propiedad" content="valor de la propiedad">
+Name almacena el nombre de la propiedad y content el valor de la propiedad.
+
+No existe ninguna especificación de la W3C que defina los valores posibles para el atributo name, 
+si bien existen algunos que son estandares de facto (description, keywords, author etc.)
+
+Veamos las propiedades y valores más comunes
+
+<meta name="keywords" content="html, programación, webmaster">
+Los buscadores tienen en cuenta los metadatos. Si en la página inicializamos la propiedad name del elemento meta con el
+valor keywords luego buscará en la propiedad content las distintas palabras claves más representativas para dicha página. 
+Esto es muy útil para posicionar nuestra página según el contenido que provee.
+
+Veamos otras inicializaciones del elemento meta:
+
+<meta name="description" content="El objetivo de este tutorial 
+es presentar los conceptos básicos de HTML. Es objetivo prioritario respetar 
+los estándares del W3C">
+En este caso especificamos una descripción de la página, pudiendo ser del sitio si se trata de la página principal.
+
+<meta name="author" content="Diego Rodriguez">
+<meta name="copyright" content="Interpolacion inc.">
+
+Ejemplo:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Ya</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="html, programación, webmaster, tutorial">
+  <meta name="description" content="El objetivo de este tutorial es presentar los conceptos básicos de HTML. Es objetivo prioritario respetar los estándares del W3C">
+  <meta name="author" content="Diego Rodriguez">
+  <meta name="copyright" content="Interpolacion inc.">
+</head>
+<body>
+<p>Es una página para probar inicializar el elemento HTML meta.</p>
+</body>
+</html>
