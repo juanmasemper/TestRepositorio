@@ -1,0 +1,30 @@
+<!-- Problema:Confeccione un formulario que solicite el ingreso de un mail, una clave y luego muestre una 
+serie de títulos de películas con su respectivo checkbox. 
+Disponer también del botón de tipo submit para el envío de datos al servidor. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de prueba</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Formulario</h2>
+        <form action="registrardatos.php" method="post">
+            Ingrese su email:
+            <input type="text" name="email" size="30">
+            <br><br>
+            Ingrese su clave:
+            <input type="password" name="clave" size="12">
+            <br><br>
+            Seleccione las peliculas que haya visto: <br>
+            <input type="checkbox" name="pelicula1">Star Wars I <br>
+            <input type="checkbox" name="pelicula2">Star Wars II <br>
+            <input type="checkbox" name="pelicula3">Los Simpsons, La Pelicula <br>
+            <input type="checkbox" name="pelicula4">Resident Evil
+            <br><br>
+            <input type="submit" name="Enviar">
+            <input type="reset" name="Borrar">
+        </form>
+    </body>
+</html>
