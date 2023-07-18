@@ -1,0 +1,26 @@
+<!--38 - Formulario - input type="hidden"-->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba de formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="registrardatos.php" method="post">
+            <input type="hidden" value="10:20" name="hora">
+            Ingrese su nombre:
+            <input type="text" name="nombre" size="30">
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+    </body>
+</html>
+
+<!-- En el atributo value almacenamos el valor (este valor no se puede modificar desde el formulario)
+
+Podemos imaginar una utilidad, supongamos que queremos que un visitante reenvíe un formulario cargado con todos los datos en un tiempo limitado, 
+podríamos almacenar en el campo oculto la primera vez que solicita la página que contiene el formulario donde se resgistrará dicha hora. 
+Luego al subir el formulario ya cargado al servidor controlaremos mediante un lenguaje de servidor si la hora actual y 
+ la hora de pedido del formulario no hacen invalidar los datos.-->

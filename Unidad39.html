@@ -1,0 +1,80 @@
+<!-- Problema:Confeccionar un formulario que permita solicitar pizzas a domicilio. 
+    Agrupar los controles aquellos relacionados con el cliente y los referentes al pedido.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuccinoto: Delivey de pizzas</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Cuccinoto</h1>
+        <form action="registrardatos.php" method="post">
+            <fieldset>
+                <legend>Seleccione tipo y cantidad de pizzas</legend>
+                Pizza:
+                <select name="pizza1">
+                    <option value="1">Muzzarella</option>
+                    <option value="2">Jamón y Queso</option>
+                    <option value="3">Cuatro Quesos</option>
+                    <option value="4">Napolitana</option>
+                    <option value="5">Fugazzeta</option>
+                </select>
+                Cantidad:
+                <select name="cantidad1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> 
+                <br>
+                Pizza:
+                <select name="pizza1">
+                    <option value="1">Muzzarella</option>
+                    <option value="2">Jamón y Queso</option>
+                    <option value="3">Cuatro Quesos</option>
+                    <option value="4">Napolitana</option>
+                    <option value="5">Fugazzeta</option>
+                </select>
+                Cantidad:
+                <select name="cantidad1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br>
+                Pizza:
+                <select name="pizza1">
+                    <option value="1">Muzzarella</option>
+                    <option value="2">Jamón y Queso</option>
+                    <option value="3">Cuatro Quesos</option>
+                    <option value="4">Napolitana</option>
+                    <option value="5">Fugazzeta</option>
+                </select>
+                Cantidad:
+                <select name="cantidad1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos</legend>
+                Nombre y Apellido:
+                <input type="text" name="nombreYapellido" size="30">
+                <br><br>
+                Dirección:
+                <input type="text" name="direccion" size="30">
+                <br><br>
+                Teléfono:
+                <input type="text" name="telefono" size="20">
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+        </form>
+    </body>
+</html>
