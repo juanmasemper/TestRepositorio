@@ -1,0 +1,32 @@
+<!-- Problema:Confeccione un control de tipo select con los nombres de paises de América y Europa. 
+    Agrupe los paises por continente. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de prueba</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Formulario de Paises</h2>
+        <form action="registrardatos.php" method="post">
+            Seleccione 1 país de Amércia o Europa:
+            <select name="paises">
+                <optgroup label="Amércia">
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Colombia</option>
+                    <option value="4">Ecuador</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="5">España</option>
+                    <option value="6">Portugal</option>
+                    <option value="7">Bélgica</option>
+                    <option value="8">Dinamarca</option>
+                </optgroup>
+            </select><br><br>
+            <input type="submit" name="Enviar">
+            <input type="reset" name="Restablecer">
+        </form>
+    </body>
+</html>

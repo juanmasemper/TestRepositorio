@@ -1,0 +1,27 @@
+<!-- Problema:Confeccionar un formulario que solicite el ingreso del nombre de una persona y permita votar el sitio. 
+Mediante un cuadro de selección el visitante puede elegir entre las siguientes opciones: Excelente, Muy Bueno, Bueno, Regular y Malo. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Formulario</h2>
+        <form action="registrardatos.php" method="post">
+            Ingrese su nombre:
+            <input type="text" name="nombre" size="20"> <br><br>
+            ¿Cómo le parece el funcionamiento de este sitio?
+            <select name="funcionamiento">
+                <option value="1">Excelente</option>
+                <option value="2">Muy Bueno</option>
+                <option value="3">Bueno</option>
+                <option value="4">Regular</option>
+                <option value="5">Malo</option>
+            </select> <br><br>
+            <input type="submit" name="Enviar">
+            <input type="reset" name="Restablecer">
+        </form>
+    </body>
+</html>

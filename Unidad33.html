@@ -1,0 +1,27 @@
+<!-- Problema:Confeccionar un formulario que muestre en un control select un serie de mail. 
+    Luego permitir que el visitante seleccione uno o varios mail del cuadro de selección. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Formulario de prueba</h2>
+        <form action="registrardatos.php" method="post">
+            <strong> Seleccione un email o más de uno </strong>(con la tecla CTRL + CLICK IZQUIERDO) <br><br>
+            <select name="email" size="4" multiple>
+                <option value="1">juanmanuelsemper@gmail.com</option>
+                <option value="2">semperjm@gmail.com</option>
+                <option value="3">jmsemper@gmail.com</option>
+                <option value="4">juanmasemper@gmail.com</option>
+                <option value="5">juanma22semper@gmail.com</option>
+                <option value="6">manusemper@gmail.com</option>
+                <option value="7">sempermanu@gmail.com</option>
+            </select> <br><br>
+            <input type="submit" name="Enviar">
+            <input type="reset" name="Restablecer">
+        </form>
+    </body>
+</html>
