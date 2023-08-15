@@ -1,0 +1,27 @@
+<!--Problema:Confeccionar un formulario que muestre un control de cada tipo y los muestre todos deshabilitados. 
+    (Cuando conozca JavaScript podemos habilitarlos por ejemplo si el visitante ingresa una clave correcta, 
+    por ahora vea como queda visualmente el formulario con los controles deshabilitados)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Documento de prueba</h2>
+        <p>A continuación se encontrará con controles deshabilitados ya que nos encontramos en mantenimiento.</p>
+        <!-- <p>Ya nos encontramos en linea de vuelta!</p> mensaje cuando quiera habilitar los controles-->
+        <p>Muchas gracias por su paciencia!</p> 
+        <form action="registrardatos.php" method="post">
+            <input type="radio" name="control1" disabled> Iniciar Documento
+            <br>
+            <input type="radio" name="control2" disabled> Editar Documento
+            <br><br>
+            Subir archivo: <input type="file" name="control3" disabled>
+            <br><br>
+            <input type="submit" value="Enviar" disabled>
+            <input type="reset" value="Borrar" disabled>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!--Problema:Confeccionar una página que permita calificar un sitio. 
+    Se debe ingresar el nombre y mediante un control de tipo select elegir un valor entre 1 y 10. 
+    Asociar elementos de tipo label a cada control.--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Califique el sitio</h2>
+        <form action="registrardatos.php" method="post">
+            <fieldset>
+                <legend>Complete los siguientes campos</legend>
+                <br>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" name="nombre" id="nombre" maxlength="20" size="20">
+                <br><br>
+                <label for="valor">Valore la pagina:</label>
+                <select name="valor" id="valor">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                    <option value="1">6</option>
+                    <option value="1">7</option>
+                    <option value="1">8</option>
+                    <option value="1">9</option>
+                    <option value="1">10</option>
+                </select>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>

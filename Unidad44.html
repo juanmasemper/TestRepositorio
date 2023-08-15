@@ -1,0 +1,25 @@
+<!--Problema:Crear un controles de tipo text, password y textarea. Disponerlos todos de solo lectura.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Documento de prueba</h2>
+        <form action="registrardatos.php" method="post">
+            Su nombre es:
+            <input type="text" name="nombre" value="Juan Manuel" readonly>
+            <br><br>
+            Su contraseña es:
+            <input type="password" name="contraseña" value="contraseña" readonly>
+            <br><br>
+            <textarea name="Comentarios" cols="30" rows="10" readonly>Esta aplicación funciona de forma correcta! Esoty muy contento con el que lo desarrollo.
+            </textarea>
+            <br><br>
+            <input type="submit" value="Enviar" disabled>
+            <input type="reset" value="Borrar" disabled>
+        </form>
+    </body>
+</html>
